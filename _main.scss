@@ -1,0 +1,247 @@
+.container {
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .add {
+        position: relative;
+        margin-right: 20px;
+        margin-left: 720px;
+        margin-top: 60px;
+        background-color: #FFF;
+        border-style: solid;
+        font-size: 30px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 3px 4px 18px -3px rgba(238, 15, 15, 0.31);
+        }
+    }
+}
+
+.title1 {
+    border-radius: 8px;
+    border: 1px solid black
+}
+
+.cont {
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+
+
+    .save {
+        Width: 94px;
+        Height: 34px;
+        color: #FFF;
+        background-color: #0082CB;
+        border-radius: 8px;
+        border: 1px solid #0082CB;
+        cursor: pointer;
+
+        & :hover {
+            box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+        }
+
+    }
+
+    .cancel {
+        Width: 94px;
+        Height: 34px;
+        margin-left: 550px;
+        color: #0082CB;
+        background-color: #FFF;
+        border-radius: 8px;
+        border: 1px solid #0082CB;
+        cursor: pointer;
+
+        & :hover {
+            box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+        }
+
+    }
+}
+
+.cont0 {
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+
+    .cont2 {
+        cursor: pointer;
+    }
+}
+
+.container-md {
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.todo-list .todo-item-low {
+    background-color: #fbfbfb;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border-left: 8px solid green;
+    box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    margin-bottom: 23px;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .overline {
+        color: #595959;
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+        color: black;
+
+    }
+
+    &:hover {
+        box-shadow: 3px 4px 18px -3px rgba(0, 0, 0, 0.31);
+
+        & .delete-item {
+            display: block;
+        }
+
+        & .check {
+            display: block;
+        }
+
+        & .check:active {
+            display: block;
+        }
+    }
+}
+
+.todo-list .todo-item-high {
+    background-color: rgb(211, 121, 121);
+    padding: 14px 30px;
+    border-radius: 8px;
+    border-left: 8px solid red;
+    box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    margin-bottom: 23px;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .overline {
+        color: #595959;
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+        color: black;
+
+    }
+
+    &:hover {
+        box-shadow: 3px 4px 18px -3px rgba(0, 0, 0, 0.31);
+
+        & .delete-item {
+            display: block;
+        }
+
+        & .check {
+            display: block;
+        }
+
+        & .check:active {
+            display: block;
+        }
+    }
+}
+
+.todo-list .todo-item-medium {
+    background-color: rgb(233, 233, 124);
+    padding: 14px 30px;
+    border-radius: 8px;
+    border-left: 8px solid yellow;
+    box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    margin-bottom: 23px;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .overline {
+        color: #595959;
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+        color: black;
+
+    }
+
+    &:hover {
+        box-shadow: 3px 4px 18px -3px rgba(0, 0, 0, 0.31);
+
+        & .delete-item {
+            display: block;
+        }
+
+        & .check {
+            display: block;
+        }
+
+        & .check:active {
+            display: block;
+        }
+    }
+}
+
+.todo-list .delete-item {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    display: none;
+    cursor: pointer;
+}
+
+.todo-list .check {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+.checkactive {
+    display: block;
+}
+
+.checkinactive {
+    display: none;
+}
+
+.delete {
+    display: none;
+}

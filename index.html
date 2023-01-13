@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="cont0">
+        <div class="cont1">
+          <h3>Title</h3>
+          <input
+            onchange="myFunction(this.value)"
+            type="text"
+            id="title"
+            class="title1"
+            placeholder="Write TODO ..."
+          />
+          <br />
+          <h3>Description</h3>
+          <textarea
+            onchange="myFunction2(this.value)"
+            name="title"
+            class="title1"
+            id="description"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="cont2">
+          Priority
+          <br />
+          <input
+            type="radio"
+            onchange="onRadioClicked(this.value)"
+            id="low"
+            value="low"
+            name="priority"
+          />
+          <label for="Low">Low</label><br />
+          <input
+            onchange="onRadioClicked(this.value)"
+            type="radio"
+            id="medium"
+            value="medium"
+            name="priority"
+          />
+          <label for="Medium">Medium</label><br />
+          <input
+            onchange="onRadioClicked(this.value)"
+            type="radio"
+            id="high"
+            value="high"
+            name="priority"
+          />
+          <label for="High">High</label>
+        </div>
+      </div>
+      <button type="submit" class="save btn">SAVE</button>
+      <button type="submit" id="cancel" class="cancel btn">CANCEL</button>
+    </div>
+    <div class="container">
+      <h1>My task</h1>
+      <button class="add">+</button>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <section class="container-md todo-list"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
